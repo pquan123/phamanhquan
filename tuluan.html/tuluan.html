@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Khu Du Lịch Sinh Thái</title>
+</head>
+<style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+        }
+        .title {
+            width: 100%;
+            text-align: center;
+        }
+        header {
+            background-color: #2e8b57;
+            color: white;
+            position:fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        header .title {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight:bold;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            margin-top: 110px;
+            position: relative;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 300px;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            width: 1000px;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .container h2 {
+            color: #2e8b57;
+        }
+        .tour-list {
+            text-align: center;
+        }
+
+        .tour {
+            width: 220px;
+            display: inline-block;
+            margin: 10px;
+            border: 1px solid #ccc;
+            background-color: #fafafa;
+            vertical-align: top;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tour:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .tour img {
+            width: 100%;
+            height: 150px;
+        }
+
+        .tour p {
+            margin: 5px 0;
+        }
+
+        .tag {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: orange;
+            color: white;
+            padding: 3px 6px;
+            font-size: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #dff0ea;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #246b45;
+            transform: translateY(-2px);
+        }
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+</style>
+<body>
+    <header>
+        <div class="title">
+            <h1>🌿 DU LỊCH SINH THÁI</h1>
+            <div class="menu">
+                <a href="#home">Trang chủ</a>
+                <a href="#tour">Tour</a>
+                <a href="#price list">Bảng giá</a>
+                <a href="#book">Đặt tour</a>
+            </div>
+        </div>
+    </header>
+    <div class="banner" id="home">
+        <img src="https://drive.google.com/file/d/1I-SCtRTFC0mqg1iDdeJzV74m6WOafCU_/view?usp=sharing">
+        <div class="banner-text">
+            <h2>Khám phá thiên nhiên - Trải nghiệm xanh</h2>
+            <p>Hành trình thư giãn & bảo vệ môi trường</p>
+        </div>
+    </div>
+    <div class="container" id="home">
+        <h2>📘 Giới thiệu</h2>
+        <p>
+            Khu du lịch sinh thái mang đến không gian thiên nhiên trong lành,
+            phù hợp cho nghỉ dưỡng, dã ngoại và trải nghiệm cuộc sống xanh.
+        </p>
+    </div>
+    <div class="container" id="tour">
+        <h2>🏕️ Các tour nổi bật</h2>
+
+        <div class="tour-list">
+            <div class="tour">
+                <span class="tag">HOT</span>
+                <img src="https://drive.google.com/file/d/1ySdHJDappyZk2-zYL_P-DA9U7S6oY1jC/view?usp=sharing">
+                <p><b>Rừng nguyên sinh</b></p>
+                <p>2 ngày 1 đêm</p>
+            </div>
+
+            <div class="tour">
+                <img src="https://drive.google.com/file/d/1uHhCEtMCEf7yKpvmNIi7Wn3URfSaAgTy/view?usp=sharing">
+                <p><b>Suối & thác nước</b></p>
+                <p>1 ngày</p>
+            </div>
+
+            <div class="tour">
+                <span class="tag">NEW</span>
+                <img src="https://drive.google.com/file/d/1NUaMJ9uBTropfipP4KpRBS9PpNApSHuB/view?usp=sharing">
+                <p><b>Cắm trại sinh thái</b></p>
+                <p>3 ngày 2 đêm</p>
+            </div>
+
+            <div class="tour">
+                <img src="https://drive.google.com/file/d/1hvo8XVyDPiWgI5Q5eDnZfSgUWa8tnZd0/view?usp=sharing">
+                <p><b>Vườn trái cây</b></p>
+                <p>Trong ngày</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="price list">
+        <h2>💰 Bảng giá tour</h2>
+
+        <table>
+            <tr>
+                <th>Tên tour</th>
+                <th>Thời gian</th>
+                <th>Giá</th>
+            </tr>
+            <tr>
+                <td>Rừng nguyên sinh</td>
+                <td>2N1Đ</td>
+                <td>1.200.000đ</td>
+            </tr>
+            <tr>
+                <td>Cắm trại sinh thái</td>
+                <td>3N2Đ</td>
+                <td>1.800.000đ</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container" id="book">
+        <h2>📝 Đặt tour</h2>
+        <input type="Name" placeholder="Họ và tên">
+        <input type="Phone" placeholder="Số điện thoại">
+        <input type="Tour name" placeholder="Tên tour">
+        <button>Gửi đăng ký</button>
+    </div>
+    <footer>
+        © 2026 Khu Du Lịch Sinh Thái
+    </footer>
+</body>
+
+</html>
